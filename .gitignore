@@ -5,6 +5,8 @@ pom.xml.versionsBackup
 pom.xml.next
 release.properties
 .gradle
+.classpath
+.settings
 build/
 gradle-app.setting
 *.project
