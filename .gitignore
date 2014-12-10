@@ -14,3 +14,5 @@ gradle-app.setting
 *.ipr
 *.iws
 out
+*.zip
+.idea

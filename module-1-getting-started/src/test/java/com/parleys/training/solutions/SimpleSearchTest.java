@@ -1,7 +1,7 @@
 package com.parleys.training.solutions;
 
-import net.serenity_bdd.core.annotations.findby.By;
 import org.junit.Test;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
