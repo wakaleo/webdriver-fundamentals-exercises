@@ -26,8 +26,9 @@ public class EtsyBuyer extends ScenarioSteps {
   }
 
   @Step
-  public void should_see_trending_title(String expectedTitle) {
-    assertThat(homePage.getTrendingTitle()).isEqualTo(expectedTitle);
+  public void should_see_trending_title(String... allowedExpectedTitles) {
+    assertThat(homePage.getTrendingTitle()).isIn(allowedExpectedTitles);
+
   }
 
   @Step

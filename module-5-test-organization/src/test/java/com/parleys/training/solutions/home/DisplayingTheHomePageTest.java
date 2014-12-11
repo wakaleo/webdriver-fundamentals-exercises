@@ -29,7 +29,7 @@ public class DisplayingTheHomePageTest {
   @Test
   public void shouldShowRecentFavoritesSection() {
     buyer.opens_home_page();
-    buyer.should_see_trending_title("Recent Favourites");
+    buyer.should_see_trending_title("Recent Favourites", "Recent Favorites");
   }
 
 }

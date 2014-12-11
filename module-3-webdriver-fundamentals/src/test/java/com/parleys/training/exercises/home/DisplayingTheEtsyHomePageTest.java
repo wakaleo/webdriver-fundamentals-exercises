@@ -22,7 +22,7 @@ public class DisplayingTheEtsyHomePageTest {
   @Test
   public void shouldShowRecentFavoritesSection() {
     String trendingTitle = driver.findElement(By.cssSelector("#trending h2")).getText();
-    assertThat(trendingTitle).isEqualTo("Recent Favourites");
+    assertThat(trendingTitle).isIn("Recent Favorites", "Recent Favourites");
   }
 
   @Test

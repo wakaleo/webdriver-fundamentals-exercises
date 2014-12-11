@@ -27,14 +27,4 @@ public class ItemDetailsPage extends PageObject {
     public String getItemName() {
         return itemName.getText();
     }
-
-    public void addToCart() {
-        Actions actions = new Actions(getDriver());
-        actions.moveToElement(descriptionTab).perform();
-
-        addToCartButton.click();
-
-        Wait wait = new WebDriverWait(getDriver(), 5);
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".checkout-action")));
-    }
 }

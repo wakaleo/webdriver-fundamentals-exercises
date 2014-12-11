@@ -20,7 +20,7 @@ public class DisplayingTheHomePageTest {
   @Test
   public void shouldShowRecentFavoritesSection() {
     homePage.open();
-    assertThat(homePage.getTrendingTitle()).isEqualTo("Recent Favourites");
+    assertThat(homePage.getTrendingTitle()).isIn("Recent Favorites","Recent Favourites");
   }
 
 }
