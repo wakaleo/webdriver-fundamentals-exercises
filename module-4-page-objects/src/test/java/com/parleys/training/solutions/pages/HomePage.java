@@ -6,6 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import java.util.List;
 
@@ -22,6 +23,7 @@ public class HomePage extends PageObject {
   public void searchFor(String keywords) {
     searchQuery.sendKeys(keywords);
     searchButton.click();
+    waitFor("#search-header");
   }
 
   public String getTrendingTitle() {
