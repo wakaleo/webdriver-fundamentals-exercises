@@ -1,4 +1,4 @@
-package com.parleys.training.solutions.home;
+package com.parleys.training.exercises.search;
 
 import org.junit.After;
 import org.junit.Before;
@@ -9,7 +9,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class DisplayingTheEtsyHomePageTest {
+public class SearchingByKeywordTest {
 
   WebDriver driver;
 
@@ -20,13 +20,9 @@ public class DisplayingTheEtsyHomePageTest {
   }
 
   @Test
-  public void shouldShowRecentFavoritesSection() {
-    String trendingTitle = driver.findElement(By.cssSelector("#trending h2")).getText();
-    assertThat(trendingTitle).isEqualTo("Recent Favourites");
-  }
-
-  @Test
   public void shouldBeAbleToSearchByKeyword() {
+    // TODO: Refactor this to use two Serenity Page Objects
+
     driver.findElement(By.id("search-query")).sendKeys("shoes");
     driver.findElement(By.cssSelector(".btn-primary[value='Search']")).click();
 
@@ -36,6 +32,8 @@ public class DisplayingTheEtsyHomePageTest {
 
   @Test
   public void shouldBeAbleToSearchByKeywordAndRefineByItemType() {
+    // TODO: Refactor this to use two Serenity Page Objects
+
     driver.findElement(By.id("search-query")).sendKeys("shoes");
     driver.findElement(By.cssSelector(".btn-primary[value='Search']")).click();
 
@@ -47,6 +45,8 @@ public class DisplayingTheEtsyHomePageTest {
 
   @Test
   public void shouldOnlyDisplayRelatedItemsInSearchResults() {
+    // TODO: Refactor this to use two Serenity Page Objects
+
     driver.findElement(By.id("search-query")).sendKeys("shoes");
     driver.findElement(By.cssSelector(".btn-primary[value='Search']")).click();
 

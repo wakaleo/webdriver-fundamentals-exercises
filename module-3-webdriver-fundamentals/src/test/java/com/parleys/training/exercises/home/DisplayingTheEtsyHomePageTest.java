@@ -27,15 +27,21 @@ public class DisplayingTheEtsyHomePageTest {
 
   @Test
   public void shouldBeAbleToSearchByKeyword() {
-    // TODO: 1) Implement  search that enters 'shoes' into the search field and clicks on the search button
+    // TODO: 1) Implement a search that enters 'shoes' into the search field and clicks on the search button
     // TODO: 2) Check that the word "shoes" appears in the 'Show results for:' text
   }
 
   @Test
   public void shouldBeAbleToSearchByKeywordAndRefineByItemType() {
-    // TODO: 1) Implement  search that enters 'shoes' into the search field and clicks on the search button
+    // TODO: 1) Implement a search that enters 'shoes' into the search field and clicks on the search button
     // TODO: 2) On the results page, filter by Item Type 'Vintage'
     // TODO: 3) Check that the word "shoes" appears in the 'Show results for:' text
+  }
+
+  @Test
+  public void shouldOnlyDisplayRelatedItemsInSearchResults() {
+    // TODO: 1) Implement a search that enters 'shoes' into the search field and clicks on the search button
+    // TODO: 2) Ensure that each item in the search results contains the word 'shoes' in the title
   }
 
   @After
