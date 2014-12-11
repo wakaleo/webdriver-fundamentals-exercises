@@ -1,1 +1,1 @@
-include 'module-1-getting-started','module-3-webdriver-fundamentals'
+include 'module-1-getting-started','module-3-webdriver-fundamentals', 'module-4-page-objects','module-5-test-organization'
